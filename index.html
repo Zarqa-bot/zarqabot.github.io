@@ -927,12 +927,12 @@ body.reduced-motion .contact-link{
       </div>
       <p class="eyebrow">A Travel Themed Portfolio</p>
       <h1 id="introName">Zarqa Fathima</h1>
-      <p class="intro-role">Biomedical Engineer</p>
+      <p class="intro-role"> Computational Biomed Engineering Student</p>
       <div class="passport-fields intro-passport-fields">
         <div class="pf"><span class="pf-label">Home Base</span><span class="pf-value">Austin, TX</span></div>
-        <div class="pf"><span class="pf-label">Languages</span><span class="pf-value">Urdu · Hindi · Spanish</span></div>
+        <div class="pf"><span class="pf-label">Academy Base</span><span class="pf-value">University of Texas at Austin</span></div>
       </div>
-      <p class="intro-copy" id="introCopy">Welcome aboard! I go by Zarqa-bot :P part hardware engineer, part software engineer, full-time builder. Start at TSA Control, then travel to all the islands and discover my skills, work, and projects.</p>
+      <p class="intro-copy" id="introCopy">"Hi! I am Zarqa but I usually go by zarqa-bot. I'm Just a girl who likes to engineer, design, and innovate :D I like to think of myself as a lifelong traveler piloting my way through life and enjoying the ride. I hope you enjoy learning about me through my adventure themed portfolio! PRO TIP: Start at TSA Control, then travel to all the islands and discover my skills, work, and projects.</p>
       <button id="startBtn" type="button">
         <span class="btn-icon" aria-hidden="true"></span> Start the Adventure!
       </button>
@@ -943,11 +943,11 @@ body.reduced-motion .contact-link{
         <svg viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="40" fill="none" stroke="var(--lilac-bright)" stroke-width="1.6"/>
           <circle cx="50" cy="50" r="32" fill="none" stroke="var(--lilac-bright)" stroke-width="1" opacity="0.6"/>
-          <svg x="34" y="34" width="32" height="32" viewBox="0 0 24 24"><use href="#plane-icon"/></svg>
+          <svg x="34" y="34" width="32" height="32" viewBox="0 0 24 24"><use href="#plane-icon"/>✈️</svg>
         </svg>
       </div>
       <div class="passport-cover-title">PASSPORT</div>
-      <div class="passport-cover-sub">Flight Route Portfolio</div>
+      <div class="passport-cover-sub">Travel Inspired Portfolio</div>
       <div class="passport-tap-hint">✦ Tap to open ✦</div>
     </button>
   </div>
@@ -1064,8 +1064,7 @@ body.reduced-motion .contact-link{
 "use strict";
 
 /* ============================================================================
-   1. CONTENT — edit everything in RESUME_DATA to make this yours.
-      (Placeholder content below — swap in your real details.)
+   1. CONTENT
    ============================================================================ */
 const RESUME_DATA = {
   name: "Zarqa-bot",
@@ -1165,7 +1164,7 @@ const MAP_CONFIG = [
   { id:"experience", x:1170, y:585, name:"Career Runway",        sub:"Career Route",      icon:"icon-briefcase", color:"var(--stone)",        flight:"JE-205", gate:"C2", code:"CRR", status:"ON TIME" },
   { id:"projects",   x:965,  y:842, name:"Prototyping Bay",      sub:"Projects & Builds", icon:"icon-anchor",    color:"var(--forest-light)", flight:"JE-318", gate:"A7", code:"PRB", status:"ON TIME", emoji:"🔧" },
   { id:"education",  x:635,  y:842, name:"Blueprint Archive",    sub:"Education",         icon:"icon-cap",       color:"var(--gold-dim)",     flight:"JE-412", gate:"D1", code:"BPA", status:"ON TIME" },
-  { id:"crew",       x:430,  y:585, name:"Crew Roster",          sub:"Leadership",        icon:"icon-crew",      color:"var(--crew)",         flight:"JE-522", gate:"E6", code:"CRW", status:"ON TIME" },
+  { id:"crew",       x:430,  y:585, name:"Crew Roster",          sub:"Highschool Extracurriculars",        icon:"icon-crew",      color:"var(--crew)",         flight:"JE-522", gate:"E6", code:"CRW", status:"ON TIME" },
   { id:"honors",     x:503,  y:263, name:"Honors Terminal",      sub:"Awards",            icon:"icon-trophy",    color:"var(--honors)",       flight:"JE-777", gate:"F3", code:"HNR", status:"ON TIME" }
 ];
 const TOWER_CONFIG = { id:"contact", x:800, y:500, name:"Control Tower", sub:"Get in Touch", icon:"icon-chest", color:"var(--rust)", flight:"JE-001", gate:"A1", code:"CTL", status:"FINAL CALL", isTower:true };
@@ -2060,8 +2059,8 @@ function startRoleRotation(){
    ============================================================================ */
 function init(){
   $("#introName").textContent = RESUME_DATA.name;
-  $(".topbar-name").textContent = "Zarqa Bot";
-  document.title = RESUME_DATA.name + " — " + RESUME_DATA.roles[0] + " | Flight Route Portfolio";
+  $(".topbar-name").textContent = "Zarqa-Bot";
+  document.title = RESUME_DATA.name + " — " + RESUME_DATA.roles[0] + " | Adventure Themed Portfolio";
 
   renderPath();
   renderDecor();

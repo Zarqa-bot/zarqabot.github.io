@@ -1074,8 +1074,8 @@ const RESUME_DATA = {
     photoUrl: "AboutMe.png", // set to an image URL (or data: URI) to show a real photo instead of initials
     homeBase: "Austin, TX",
     languages: "Urdu (fluent) · Hindi (intermediate) · English (fluent) · Spanish (conversational)",
-    focus: "I am a Biomedical Engineering student with a passion for design and medical technology, specifically computational whether that's BCIs or LLMs. I guess you could consider me a part-time bio-software-design engineer!" ,
-    bio: "Hi! I am Zarqa but I usually go by zarqa-bot. I'm Just a girl who likes to engineer, design, and innovate :D I like to think of myself as a lifelong traveler piloting my way through life and enjoying the ride. I hope you enjoy learning about me through my adventure themed portfolio!",
+    focus: "I am a Biomedical Engineering student with a passion for design and medical technology, specifically computational whether that's BCIs or LLMs. Just a girl who likes to engineer, design, and innovate :D" ,
+    bio: "A lifelong learner piloting my way through life and enjoying the ride!",
     interests: ["#1 Snoopy Fan (Please don't copyright me)","Travelling & Planes","tinkering","making gifts for my friends", "Stars & Constellations", "watching CaseOH streams"]
   },
   skills: {
@@ -2060,7 +2060,7 @@ function startRoleRotation(){
 function init(){
   $("#introName").textContent = RESUME_DATA.name;
   $(".topbar-name").textContent = "Zarqa-Bot";
-  document.title = RESUME_DATA.name + " — " + RESUME_DATA.roles[0] + " | Adventure Themed Portfolio";
+  document.title = "Meet " RESUME_DATA.name + " :) ";
 
   renderPath();
   renderDecor();
